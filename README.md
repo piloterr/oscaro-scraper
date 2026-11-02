@@ -70,7 +70,7 @@ response = requests.get(
     params={
         "query": "https://www.oscaro.com/huile-moteur-motul-102208-15213891-1862-p",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -184,7 +184,7 @@ response = requests.get(
     params={
         "query": "moteur ai",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
